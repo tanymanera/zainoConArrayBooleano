@@ -2,9 +2,7 @@ package it.polito.tdp.zaino_boolean;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 import it.polito.tdp.zaino_boolean.Pezzo;
 
@@ -36,12 +34,24 @@ public class ZainoBoolean {
 	 */
 	public static void main(String[] args) {
 		ZainoBoolean z = new ZainoBoolean(15); // zaino con capacità 15 kg.
-		z.add(new Pezzo(12, 4, "Verde"));
+//		z.add(new Pezzo(12, 4, "Verde"));
+//		z.add(new Pezzo(2, 2, "Azzurro"));
+//		z.add(new Pezzo(1, 1, "Salmone"));
+//		z.add(new Pezzo(4, 10, "Giallo"));
+//		z.add(new Pezzo(1, 2, "Grigio"));
+		
+//		z.add(new Pezzo(2, 2, "Azzurro"));
+//		z.add(new Pezzo(1, 1, "Salmone"));
+//		z.add(new Pezzo(1, 2, "Grigio"));
+//		z.add(new Pezzo(4, 10, "Giallo"));
+//		z.add(new Pezzo(12, 4, "Verde"));
+		
 		z.add(new Pezzo(2, 2, "Azzurro"));
 		z.add(new Pezzo(1, 1, "Salmone"));
-		z.add(new Pezzo(4, 10, "Giallo"));
+		z.add(new Pezzo(12, 4, "Verde"));
 		z.add(new Pezzo(1, 2, "Grigio"));
-
+		z.add(new Pezzo(4, 10, "Giallo"));
+		
 		boolean[] soluzione = z.risolvi();
 
 		// Stampa della soluzione
